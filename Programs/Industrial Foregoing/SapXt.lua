@@ -2,16 +2,16 @@ TermLib = require("TermLib")
 
 --initialize
 TermLib.reset(colors.gray)
-TermLib.printc({"SapXt, V1.0.1"}, colors.lightGray)
+TermLib.printc({"SapXt, V1.0.3"}, colors.lightGray, colors.gray)
 print()
-TermLib.printc({"Managing","Sap Extractor"}, colors.yellow)
+TermLib.printc({"Managing","Sap Extractor"}, colors.yellow, colors.gray)
 print()
 
 --places a log if nothing below the turtle
 --acacia logs are ideal for sap
 while turtle.getItemCount() > 0  and not turtle.detectDown() do
     turtle.placeDown(1)
-    TermLib.printx({"Placed Acacia Log..."}, colors.blue)
+    TermLib.printx({"Placed Acacia Log..."}, colors.blue, colors.gray)
 end
 
 --reboots turtle when out of logs
