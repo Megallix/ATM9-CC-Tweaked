@@ -18,4 +18,4 @@ end
 print()
 TermLib.printc({"No logs found,","rebooting OS in..."}, colors.red, colors.cyan)
 TermLib.countdown(nil, nil, nil, colors.red, colors.cyan)
-reboot()
+os.reboot()
