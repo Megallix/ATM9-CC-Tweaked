@@ -1,5 +1,5 @@
--- reset terminal
--- background color support
+--Resets the terminal.
+--Supports background colors.
 local function reset(color)
     color = color or colors.black
     term.setBackgroundColor(color)
@@ -7,8 +7,8 @@ local function reset(color)
     term.setCursorPos(1,1)
 end
 
--- multiline print
--- color support
+--Handles multiline printing.
+--Supports text & background colors.
 local function printx(text, tColor, bColor)
     text = text or {""}
     tColor = tColor or colors.white
@@ -21,9 +21,9 @@ local function printx(text, tColor, bColor)
     end
 end
 
--- center print
--- multiline support
--- color support
+--Prints to center of current line.
+--Supports text & background colors.
+--Supports multiline prints.
 local function printc(text, tColor, bColor)
     text = text or {""}
     tColor = tColor
@@ -37,9 +37,9 @@ local function printc(text, tColor, bColor)
     end
 end
 
--- countdown for specified time
--- color support
--- center support
+--Prints a countdown with a settable time.
+--Supports text & background colors.
+--Supports center prints.
 local function countdown(time, prefix, suffix, tColor, bColor, center)
     time = time or 3
     prefix = prefix or ""
