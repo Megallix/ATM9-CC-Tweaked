@@ -33,7 +33,7 @@ local function printc(text, tColor, bColor)
     for i, v in ipairs(text) do
         local x, y = term.getCursorPos()
         term.setCursorPos(math.floor((width - #v) / 2) + 1, y)
-        term.printx(v, tColor, bColor)
+        printx(v, tColor, bColor)
     end
 end
 
