@@ -2,7 +2,7 @@ TermLib = require("TermLib")
 
 --initialize
 TermLib.reset(colors.gray)
-TermLib.printc({"SapXt, V1.0.5"}, colors.lightGray, colors.gray)
+TermLib.printc({"SapXt, V1.0.6"}, colors.pink, colors.gray)
 print()
 TermLib.printc({"Managing","Sap Extractor"}, colors.yellow, colors.gray)
 print()
