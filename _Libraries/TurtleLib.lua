@@ -1,14 +1,15 @@
---TurtleLib V2.1.3
+--TurtleLib V3.0.0
 
 local function invfind()
-    local inventory = {}
-    for i = 1, 16 do
-        inventory[i] = turtle.getItemDetail(i)
-    end
-    for i, v in ipairs(inventory) do
-        for j, w in ipairs(v) do
-            print(inventory[i][j])
-        end
+    local inventory = {
+        {
+            count = 4,
+            name = "minecraft:acacia_log"
+        }
+    }
+
+    for i, item in ipairs(inventory) do
+        print(item, inventory[i])
     end
 end
 
