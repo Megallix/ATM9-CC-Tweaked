@@ -1,7 +1,6 @@
---TurtleLib V1.0.0.2
+--TurtleLib V1.0.0.3
 
---Cycle through inventory.
---Returns either table of inventory, or search term if found.
+--Return table of inventory.
 local function invcheck(search)
     local inventory = {}
     for i = 1, 16 do
@@ -11,7 +10,5 @@ local function invcheck(search)
 end
 
 for i, v in ipairs(invcheck()) do --debugging
-    for n, a in ipairs(v) do
-        print(n, a)
-    end
+    print(i.v)
 end
