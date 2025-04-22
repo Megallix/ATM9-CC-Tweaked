@@ -1,5 +1,4 @@
---TurtleLib V3.0.0
-
+--TurtleLib V3.1.0
 local function invfind()
     local inventory = {
         {
@@ -8,8 +7,10 @@ local function invfind()
         }
     }
 
-    for i, item in ipairs(inventory) do
-        print(item, inventory[i])
+    for i = 1, #inventory do
+        for j, v in pairs(inventory[i]) do
+            print(j,v)
+        end
     end
 end
 
