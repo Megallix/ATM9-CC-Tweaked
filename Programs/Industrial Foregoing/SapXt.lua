@@ -1,6 +1,6 @@
 --SapXt V1.0.7.1
 
-TermLib = require("TermLib")
+TermLib = require("termlib")
 
 --initialize
 TermLib.reset(colors.gray)
